@@ -6,7 +6,7 @@ function myselection() {
   let i = myselect.selectedIndex;
   let option = myselect.options[i].text;
   if (option == "Teacher") {
-      studentDiv.style="display:none;";
+      studentDiv.style="display:none; height:0px; width:0px";
     displayTeacherLogin();
   }
   if (option == "Student") {
@@ -17,5 +17,5 @@ function myselection() {
 }
 
 function displayTeacherLogin() {
-  teacherDiv.style = "display:block";
+  teacherDiv.style = "display:block;";
 }
