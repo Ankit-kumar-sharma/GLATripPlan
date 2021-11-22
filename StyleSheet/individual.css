@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap");
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "Quicksand", sans-serif;
+}
+.container
+{
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid black; */
+}
+header
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: forestgreen;
+    box-shadow: 5px 0px 10px forestgreen;
+}
+header p
+{
+    font-size: 28px;
+    color: white;
+}
+main
+{
+    padding-right: 200px;
+    width: 100%;
+    height: 89vh;
+    background: url(../Images/lord-krishna.svg);
+    background-position:100px center;
+    background-repeat: no-repeat;
+    background-size: 26%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    /* background-image: linear-gradient(to bottom,50% forestgreen,50%white); */
+    /* border: 1px solid black; */
+}
+.formContainer
+{
+    width: 420px;
+    height: 99%;
+    /* border: 1px solid red; */
+}
+form
+{
+    margin-top: 5px;
+    width: 95%;
+    height: 98%;
+    box-shadow: 10px 10px 8px #aaaaaa;
+    /* border: 1px solid #bfbfbf; */
+}
+
+label
+{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: forestgreen;
+    font-size: 20px;
+    display: block;
+}
+select
+{
+    border: none;
+    /* border-radius: 5px; */
+    cursor: pointer;
+    color: gray;
+    outline: none;
+    border-bottom: 1px solid #bfbfbf;
+    font-size: 18px;
+    width: 90%;
+    height: 28px;
+}
+input[type=text],input[type=number]
+{
+    border: none;
+    font-size: 18px;
+    color: gray;
+    outline: none;
+    border-bottom: 1px solid #bfbfbf;
+    width: 90%;
+    height: 28px;
+    /* border-radius: 5px; */
+    /* position: relative; */
+}
+.formItemContainer
+{
+    margin-top: 10px;
+    /* border: 1px solid green; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+input[type=text]::before
+{
+    transition: width 1s;
+    position: absolute;
+    content: '';
+    left: 21px;
+    bottom: 0px;
+    width: 10px;
+    height: 10px;
+    color: red;
+    background-color: red;
+}
+input[type=text]:hover .formItemContainer::before
+{
+    width: 100px;
+}
+.register
+{
+    margin: auto;
+    margin-top: 40px;
+    display: block;
+    border-radius: 0px;
+    cursor: pointer;
+    width: 80%;
+    height: 40px;
+    border: none;
+    color: forestgreen;
+    font-size: 20px;
+    background-color: white;
+    border: 1px solid forestgreen;
+    transition: width .3s;
+}
+.register:hover
+{
+    width: 95%;
+    color: white;
+    background-color: forestgreen;
+}
+::placeholder
+{
+    font-size: 16px;
+    font-style: italic;
+}
