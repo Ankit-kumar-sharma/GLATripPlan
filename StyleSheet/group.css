@@ -29,7 +29,7 @@ header p
 main
 {
     margin-top: 40px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 100%;
     height: 380px;
     /* background-image: url(../Images/lord-krishna.svg); */
@@ -43,10 +43,14 @@ main
 }
 .card
 {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
     margin-right: 2px;
     width: 270px;
-    height: 100%;
-    border: 1px solid black;
+    height: 99%;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 .titleContainer
 {
@@ -55,10 +59,51 @@ main
     align-items: center;
     width: 100%;
     height: 70px;
-    border: 1px solid black;
+    /* border: 1px solid rgb(80, 78, 78); */
 }
 .titleContainer p
 {
     font-size: 25px;
     color: forestgreen;
+}
+.groupName
+{
+    border-radius: 2px;
+    color: white;
+    background-color: forestgreen;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 39px;
+    /* border: 1px solid black; */
+}
+textarea
+{
+    padding: 5px;
+    display: block;
+    margin: auto;
+    font-size: 20px;
+    color: forestgreen;
+    outline: none;
+    border: none;
+}
+label
+{
+    border-radius: 10px;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: forestgreen;
+    color: white;
+}
+::placeholder
+{
+    font-size: 18px;
 }
